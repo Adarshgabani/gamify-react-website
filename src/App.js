@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './pages/Home';
 import GlobalStyles from './components/GlobalStyles';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Nav from './components/Nav';
 
 function App() {
