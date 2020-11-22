@@ -26,7 +26,7 @@ const gameReducer = (state = initialState, action) => {
                 searched: []
             }
         default:
-            return state;
+            return { ...state };
     }
 }
 

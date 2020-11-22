@@ -14,18 +14,28 @@ import { popup } from '../animations';
 
 const Game = ({ name, released, image, id }) => {
     const stringPathId = id.toString();
-    //Load detail
+    //Load Detail Handler
     const dispatch = useDispatch();
     const loadDetailHandler = () => {
-        document.body.style.overflow = 'hidden';
-        dispatch(loadDetail(id))
-    }
+        document.body.style.overflow = "hidden";
+        dispatch(loadDetail(id));
+    };
     return (
-        <StyledGame variants={popup} initial='hidden' animate='show' layoutId={stringPathId} onClick={loadDetailHandler}>
+        <StyledGame
+            variants={popup}
+            initial="hidden"
+            animate="show"
+            layoutId={stringPathId}
+            onClick={loadDetailHandler}
+        >
             <Link to={`/game/${id}`}>
-                <motion.h3 layoutId={`title ${stringPathId}`} >{name}</motion.h3>
+                <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
                 <p>{released}</p>
-                <motion.img layoutId={`image ${stringPathId}`} src={smallImage(image, 640)} alt="game" />
+                <motion.img
+                    layoutId={`image ${stringPathId}`}
+                    src={smallImage(image, 640)}
+                    alt={name}
+                />
             </Link>
         </StyledGame>
     )

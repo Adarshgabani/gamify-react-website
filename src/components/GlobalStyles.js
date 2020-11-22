@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         width: 100%;
     }
-    h1,h2{
+    h2{
         font-size: 3rem;
         font-family: 'Abril Fatface', cursive;
         font-weight: lighter;

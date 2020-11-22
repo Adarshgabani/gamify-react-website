@@ -52,8 +52,8 @@ const StyledNav = styled(motion.nav)`
         border:none;
         margin-top:1rem;
         box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
-            }
-            button{
+        }
+        button{
                 font-size: 1;
                 border:none;
                 padding:0.5rem 2rem;
@@ -70,8 +70,6 @@ const Logo = styled(motion.div)`
     padding:1rem;
     cursor: pointer;
     img{
-        height:3rem;
-        margin: 0rem 1rem;
     align-self: center;
     }
 `;

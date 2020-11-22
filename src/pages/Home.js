@@ -23,7 +23,7 @@ const Home = () => {
     const { newGames, upcoming, popular, searched } = useSelector(state => state.games);
     return (
         <GameList variants={fadeIn} initial='hidden' animate='show'>
-            <AnimateSharedLayout type='crossfade' >
+            <AnimateSharedLayout type="crossfade">
                 <AnimatePresence>
                     {pathId && <GameDetail pathId={pathId} />}
                 </AnimatePresence>
@@ -93,9 +93,9 @@ const GameList = styled(motion.div)`
 const Games = styled(motion.div)`
     display:grid;
     min-height:80vh;
-    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
-    grid-column-gap:3rem;
-    grid-row-gap:5rem
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
 `;
 
 export default Home
