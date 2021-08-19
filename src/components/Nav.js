@@ -45,7 +45,10 @@ const Nav = () => {
 const StyledNav = styled(motion.nav)`
     padding:3rem 5rem;
     text-align:center;
+     
+
     input{
+       
         width:30%;
         font-size:1.5rem;
         padding:0.5rem;
@@ -62,6 +65,32 @@ const StyledNav = styled(motion.nav)`
                 color:white;
                 font-size:1.5rem;
             }
+
+
+            @media screen and (max-width:1200px){
+                // margin-right:2rem;
+                input{
+                    width:40%;
+                }
+             
+            }
+            @media screen and (max-width:900px){
+                // margin-right:2rem;
+                input{
+                    width:60%;
+                }
+             
+            }
+@media screen and (max-width:700px){
+    
+    input{
+        width:80%;
+    }
+   button{
+       margin:2rem;
+   }
+}
+            
 `;
 
 const Logo = styled(motion.div)`
