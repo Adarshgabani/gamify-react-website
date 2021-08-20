@@ -167,6 +167,9 @@ const Platforms = styled(motion.div)`
     img{
         margin-left:3rem;
     }
+    @media screen and (max-width:900px){
+        flex-direction:verticle;
+    }
 `;
 
 const Media = styled(motion.div)`

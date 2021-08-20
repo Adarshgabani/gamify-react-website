@@ -29,18 +29,18 @@ const lastYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
 const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 
 //Popular Games
-const popular_games = `games?dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
-const upcoming_games = `games?dates=${currentDate},${nextYear}&ordering=-added&page_size=10`;
-const newGames = `games?dates=${lastYear},${currentDate}&ordering=-released&page_size=10`;
+const popular_games = `games?dates=${lastYear},${currentDate}&ordering=-rating&page_size=9`;
+const upcoming_games = `games?dates=${currentDate},${nextYear}&ordering=-added&page_size=9`;
+const newGames = `games?dates=${lastYear},${currentDate}&ordering=-released&page_size=9`;
 
 export const popularGamesURL = () => `${base_url}${popular_games}` + "&key=194d58a5af5b4e8ab35b034732fb48e3";
 export const upcomingGamesURL = () => `${base_url}${upcoming_games}`+ "&key=194d58a5af5b4e8ab35b034732fb48e3";
 export const newGamesURL = () => `${base_url}${newGames}`+ "&key=194d58a5af5b4e8ab35b034732fb48e3";
 //GAME DETAILS
-export const gameDetailsURL = (game_id) => `${base_url}games/${game_id}`+ "&key=194d58a5af5b4e8ab35b034732fb48e3";
+export const gameDetailsURL = (game_id) => `${base_url}games/${game_id}`+ "?key=194d58a5af5b4e8ab35b034732fb48e3";
 //Game ScreenShots
 export const gameScreenshotURL = (game_id) =>
-  `${base_url}games/${game_id}/screenshots`+ "&key=194d58a5af5b4e8ab35b034732fb48e3";
+  `${base_url}games/${game_id}/screenshots`+ "?key=194d58a5af5b4e8ab35b034732fb48e3";
 //Searched game
 export const searchGameURL = (game_name) =>
-  `${base_url}games?search=${game_name}&page_size=9`+ ",key=194d58a5af5b4e8ab35b034732fb48e3";
+  `${base_url}games?search=${game_name}&page_size=9`+ "&key=194d58a5af5b4e8ab35b034732fb48e3";
